@@ -29,7 +29,7 @@ const CourseDetail = () => {
       try {
         console.log("course id : ", courseId);
         const response = await axios.get(
-          `http://localhost:8088/api/v1/progress/course/${courseId}/detail-with-status`
+          `https://lms-backend-huvp.onrender.com/api/v1/progress/course/${courseId}/detail-with-status`
         );
         const courseData = response.data.course;
         const userPurchased = response.data.purchased; // Assuming your API sends this info

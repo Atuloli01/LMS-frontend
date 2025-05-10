@@ -13,7 +13,7 @@ const Courses = () => {
     const fetchCourses = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:8088/api/v1/course/published-courses"
+          "https://lms-backend-huvp.onrender.com/api/v1/course/published-courses"
         );
         setCourses(response.data.courses);
       } catch (error) {
